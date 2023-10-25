@@ -1,0 +1,31 @@
+Juego de adivinazas
+Esta es una aplicación de preguntas y respuestas donde los usuarios pueden responder preguntas y recibir retroalimentación sobre si su respuesta es correcta o incorrecta.
+
+Características
+Muestra una pregunta al usuario.
+El usuario puede ingresar su respuesta en un campo de texto.
+Al hacer clic en el botón "Responder", se verifica si la respuesta es correcta.
+Se muestra un mensaje de retroalimentación al usuario indicando si su respuesta es correcta o incorrecta.
+Se pasa a la siguiente pregunta y se repite el proceso.
+Al finalizar todas las preguntas, se desactiva el botón "Responder".
+Tecnologías utilizadas
+HTML
+CSS
+JavaScript
+Cómo utilizar la aplicación
+Clona este repositorio en tu máquina local.
+Abre el archivo index.html en tu navegador web.
+Se mostrará la primera pregunta y un campo de texto para ingresar la respuesta.
+Ingresa tu respuesta en el campo de texto y haz clic en el botón "Responder".
+Se mostrará un mensaje indicando si tu respuesta es correcta o incorrecta.
+Se pasará a la siguiente pregunta y se repetirá el proceso hasta que se respondan todas las preguntas.
+Al finalizar, el botón "Responder" se desactivará y se mostrará el puntaje obtenido.
+Personalización
+Si deseas agregar más preguntas o modificar las existentes, puedes hacerlo editando el archivo script.js. Asegúrate de seguir el formato de las preguntas existentes:
+
+{
+  pregunta: '¿cual es el animal que tiene cola y ladra?,
+  respuesta: 'perro'
+}
+La propiedad pregunta contiene la pregunta que se mostrará al usuario.
+La propiedad respuesta contiene la respuesta correcta a la pregunta.

@@ -105,4 +105,20 @@ function mostrarPuntaje() {
 
 function mostrarPuntajeFinal() {
   const puntajeDiv = document.getElementById('puntaje');
-  puntajeDiv.textContent = `¡${nombreJugador}, tu puntaje final es: ${puntaje}!`;}
+  puntajeDiv.textContent = `¡${nombreJugador}, tu puntaje final es: ${puntaje}!`;
+}
+
+// Cargar datos desde un archivo JSON local
+fetch('./data/preguntas.json')
+  .then(response => response.json())
+  .then(data => {
+    preguntas.push(...data);
+  })
+  .catch(error => console.error('Error al cargar los datos:', error));
+
+  fetch('https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=multiple')
+  .then(response => response.json())
+  .then(data => {
+    // Aquí puedes procesar las preguntas recibidas
+  })
+  .catch(error => console.error('Error al cargar las preguntas:', error));
